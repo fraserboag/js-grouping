@@ -7,7 +7,7 @@ const groupArrayElements = (inputArray, numGroups = 1) => {
 	
 	for (let i = numGroups; i > 0; i--) {
 		const numElementsToPush = Math.ceil(inputArray.length / i);
-        groupedArray.push(inputArray.splice(0, numElementsToPush));
+		groupedArray.push(inputArray.splice(0, numElementsToPush));
 	}
 	
 	return groupedArray;
